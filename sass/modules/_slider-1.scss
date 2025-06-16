@@ -1,0 +1,148 @@
+.biz-single-slider {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 270px;
+    padding-bottom: 276px;
+    @include xs{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+.biz-single-slider::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #151519;
+    content: "";
+    opacity: .7;
+    z-index: -1;
+}
+
+
+// Slider Content
+
+.biz-slider-shape img {
+    width: 425px;
+    height: 425px;
+    @include xs{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.biz-slider-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.biz-slider-content .biz-slider-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Teko',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 30px;
+    color: $white;
+    text-align: left;
+    @include xs{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.biz-slider-content .biz-slider-title {
+    font-size: 100px;
+    line-height: 110px;
+    color: #fff;
+    letter-spacing: 0;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    @include xs{
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
+
+.biz-slider-content .biz-slider-title .colord-text {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 110px;
+    color: $primary-clr;
+    position: relative;
+    @include xs{
+        font-size: 70px;
+        line-height: 80px;
+    }
+}
+.absolute-slider-line-shape {
+    position: absolute;
+    bottom: 27px;
+    left: 0;
+    @include xs{
+       bottom: 24px;
+    }
+}
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+
+// Slider Arrow Btn
+
+.slider-arrow-btn {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 274px;
+    @include xs{
+        right: 0;
+    }
+    background: none;
+}
+
+.slider-arrow-btn.prev-btn {
+    left: auto;
+    z-index: 99;
+    margin-top: 80px;
+}
+
+.slider-arrow-btn i {font-size: 25px;font-weight: 300;width: 40px;height: 40px;
+    @include xs{
+        width: 30px;
+        height: 30px;
+    }
+    display: flex;align-items: center;justify-content: center; padding: 30px;cursor: pointer;transition: all .5s ease-in-out;border-radius: 50px;box-shadow: 0 0 5px 0 #000;
+    position: relative;
+    z-index: 1;
+
+}
+.slider-arrow-btn i::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: $white;
+    opacity: .3;
+    z-index: -1;
+}
+
+.slider-arrow-btn i:hover {
+    background: $primary-clr;
+    color: $white;
+}

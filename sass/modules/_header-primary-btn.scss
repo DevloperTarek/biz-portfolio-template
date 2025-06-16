@@ -1,0 +1,42 @@
+
+.header-action-btn .header-action, .primary-btn {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $heading-font;
+    color: $white;
+    letter-spacing: 1px;
+    display: inline-block;
+    line-height: 1;
+    padding: 15px 30px;
+    background: $primary-clr;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+    border: 1px solid transparent;
+    transition: all .5s ease-out;
+}
+.header-action-btn .header-action:hover, .primary-btn:hover{
+    background-color: $header-top-bg;
+    color: $primary-clr;
+    border-color: $primary-clr;
+}
+
+.header-search-action {
+    line-height: 1;
+}
+
+.header-search-action i {
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .4s ease-out;
+    color: $white;
+    transform: rotate(90deg);
+}
+
+.header-search-action i:hover {
+    transform: rotate(90deg) scale(1.1);
+    color: $primary-clr;
+    font-weight: 500;
+}

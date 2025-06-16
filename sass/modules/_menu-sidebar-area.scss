@@ -1,0 +1,61 @@
+.menu-sidebar-area {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    max-width: 480px;
+    width: 100%;
+    overflow-y: auto;
+    height: 100vh;
+    background: #1f1f1f;
+    opacity: .8;
+    z-index: 99999;
+    transition: all .5s ease-out;
+    padding: 30px;
+    &.active{
+        right: 0;
+    }
+}
+
+
+.menu-sidebar-area .menu-sidebar-wrapper {
+    position: relative;
+}
+
+.menu-sidebar-area .menu-sidebar-wrapper .menu-sidebar-close .menu-sidebar-close-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: all .5s ease-out;
+    font-size: 25px;
+    font-weight: 600;
+    background: transparent;
+}
+
+.menu-sidebar-area .menu-sidebar-wrapper .menu-sidebar-close .menu-sidebar-close-btn:hover {
+    transform: translateY(-50%) rotate(180deg);
+    color:#fff;
+}
+
+.mean-container .mean-bar {
+    background: none;
+    padding: 0;
+    min-height: 0;
+}
+
+.mean-container a.meanmenu-reveal {
+    display: none !important;
+}
+
+.mean-container .mean-nav {
+    background: none;
+}
+
+.mean-container .mean-nav > ul {
+    display: block !important;
+}
+
+.mean-container .mean-nav ul li:first-child a {
+    border-top: none !important;
+}
