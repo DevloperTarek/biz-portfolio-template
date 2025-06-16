@@ -3483,6 +3483,9 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   justify-content: center;
   padding-top: 270px;
   padding-bottom: 276px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media only screen and (min-width: 0px) and (max-width: 350px) {
   .biz-single-slider {
