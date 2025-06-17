@@ -252,7 +252,7 @@ h6 {
 p {
   font-size: 16px;
   line-height: 29px;
-  font-weight: 400;
+  font-weight: 500;
   color: #666;
   letter-spacing: 0;
 }
@@ -262,6 +262,13 @@ label {
   cursor: pointer;
   font-size: 16px;
   font-weight: 400;
+}
+
+.custom-bg {
+  background-color: #1f1f1f;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 button {
@@ -4266,4 +4273,99 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   font-weight: 600;
   font-size: 20px;
   color: #1f1f1f;
+}
+
+.biz-providing-what-we-do-box-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.biz-single-providing-what-we-do-box-content {
+  background: #fff;
+  position: absolute;
+  bottom: -68px;
+  left: 8%;
+  width: 84%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 16px 40px;
+  transition: all 0.4s ease-out;
+}
+@media (max-width: 766px) {
+  .biz-single-providing-what-we-do-box-content {
+    bottom: -60px;
+  }
+}
+
+.biz-single-providing-what-we-do-box {
+  height: 447px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: all 0.4s ease-out;
+}
+
+.biz-single-providing-what-we-do-box-content .absolute-logo i {
+  width: 70px;
+  height: 70px;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  border-radius: 10px;
+  font-weight: 200;
+}
+
+.biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content .absolute-logo i {
+  background: #FE6809;
+  color: #ffffff;
+}
+
+.biz-single-providing-what-we-do-box-content .absolute-logo {
+  position: absolute;
+  top: -35px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.biz-single-providing-what-we-do-box-content .absolute-number {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 110px;
+  color: #f3f3f3;
+  position: absolute;
+  top: 0;
+  right: 23px;
+  opacity: 0.8;
+}
+
+.biz-single-providing-what-we-do-box-content .biz-what-we-do-desc {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  position: relative;
+  font-family: "Teko", sans-serif;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des {
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  transform: translateY(5px);
+}
+
+.biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content {
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

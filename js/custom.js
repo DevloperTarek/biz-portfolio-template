@@ -489,7 +489,7 @@
         /*
        Jquery Tilt Js
        ============================*/
-        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image').tilt({
+        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image,.absolute-content-1,.absolute-content-2,.absolute-content-3').tilt({
             // maxTilt: 12,
             // perspective: 1500,
             maxTilt:        30,   // Max tilt value
@@ -502,7 +502,17 @@
             glare:          true, // If it should have a "glare" effect
             maxGlare:       0.3,  // The maximum opacity of the glare effect (0 to 1)
             scale:          1  
+        });
+        // Tilt custom effect
+        let customEffectOfTilt = true;
+
+        $(".absolute-content-1,.absolute-content-2,.absolute-content-3").on('mousedown',function(){
+            customEffectOfTilt = false;
         })
+        $(".absolute-content-1,.absolute-content-2,.absolute-content-3").on('mouseup',function(){
+            customEffectOfTilt = true;
+        })
+
 
         /*
         Scroll To Top Js

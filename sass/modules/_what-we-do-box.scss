@@ -1,0 +1,90 @@
+.biz-providing-what-we-do-box-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 40px;
+}
+
+.biz-single-providing-what-we-do-box-content {
+    background: #fff;
+    position: absolute;
+    bottom: -68px;
+    left: 8%;
+    width: 84%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 16px 40px;
+    // transform: translateY(68px);
+    transition: all .4s ease-out;
+    @include rmaxwd(766){bottom: -60px;}
+    // transition-property: transform;
+}
+
+.biz-single-providing-what-we-do-box {
+    height: 447px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all .4s ease-out;
+}
+
+.biz-single-providing-what-we-do-box-content .absolute-logo i {
+    width: 70px;
+    height: 70px;
+    background: #1f1f1f;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ease-out;
+    border-radius: 10px;
+    font-weight: 200;
+}
+
+.biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content .absolute-logo i {
+    background: $primary-clr;
+    color: $white;
+}
+
+.biz-single-providing-what-we-do-box-content .absolute-logo {
+    position: absolute;
+    top: -35px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.biz-single-providing-what-we-do-box-content .absolute-number {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 110px;
+    color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    right: 23px;
+    opacity: .8;
+}
+
+.biz-single-providing-what-we-do-box-content .biz-what-we-do-desc {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    position: relative;
+    font-family: 'Teko',sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des{
+    opacity: 0;
+    transition: all .6s ease-out;
+    transform: translateY(5px);
+}
+.biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des{
+    opacity: 1;
+    transform: translateY(0);
+}
+.biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content {
+    // transform: translateY(0);
+    bottom: 0;
+}
