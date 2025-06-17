@@ -32,7 +32,7 @@
     letter-spacing: 1px;
 }
 
-.biz-section-title .biz-title.style-1 {
+.biz-section-title .biz-title.style-1,.biz-section-title .biz-title {
     font-size: 50px;
     font-weight: 500;
     line-height: 60px;
@@ -40,6 +40,27 @@
     text-transform: capitalize;
 
     @include xs{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    @include rwd(351px){
+        font-size: 30px;
+        line-height: 45px;
+    }
+}
+.biz-section-title .biz-title{
+    color: #1f1f1f;
+}
+
+.biz-section-title .biz-title span{
+    color: $primary-clr;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: capitalize;
+
+     @include xs{
         font-size: 35px;
         line-height: 45px;
     }

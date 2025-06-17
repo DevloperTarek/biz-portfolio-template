@@ -489,7 +489,7 @@
         /*
        Jquery Tilt Js
        ============================*/
-        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3').tilt({
+        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image').tilt({
             // maxTilt: 12,
             // perspective: 1500,
             maxTilt:        30,   // Max tilt value
