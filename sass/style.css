@@ -4280,6 +4280,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .biz-providing-what-we-do-box-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
 
 .biz-single-providing-what-we-do-box-content {
   background: #fff;
@@ -4295,6 +4300,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 @media (max-width: 766px) {
   .biz-single-providing-what-we-do-box-content {
     bottom: -60px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .biz-single-providing-what-we-do-box-content {
+    bottom: -95px;
   }
 }
 
@@ -4359,6 +4369,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   opacity: 0;
   transition: all 0.6s ease-out;
   transform: translateY(5px);
+}
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des {
+    font-weight: 400;
+  }
 }
 
 .biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des {

@@ -1,6 +1,9 @@
 .biz-providing-what-we-do-box-wrap {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    @include xs{
+        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    }
     gap: 40px;
 }
 
@@ -16,6 +19,9 @@
     // transform: translateY(68px);
     transition: all .4s ease-out;
     @include rmaxwd(766){bottom: -60px;}
+    @include xs{
+        bottom: -95px;
+    }
     // transition-property: transform;
 }
 
@@ -78,6 +84,9 @@
 .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des{
     opacity: 0;
     transition: all .6s ease-out;
+    @include xs{
+        font-weight: 400;
+    }
     transform: translateY(5px);
 }
 .biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des{
