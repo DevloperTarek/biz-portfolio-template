@@ -71,6 +71,9 @@
 }
 .biz-providing-contact{
     margin-left: 70px;
+    @include sm{
+        margin-left: 0;
+    }
     margin-bottom: 0;
 }
 .biz-providing-contact .biz-providing-address-icon i {

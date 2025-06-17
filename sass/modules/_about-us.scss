@@ -59,7 +59,7 @@
     position: relative;
     z-index: 1;
 
-    min-width: 440px;
+    width: 440px;
 
     @include xs {
         max-width: 350px;

@@ -3887,7 +3887,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 .biz-about-us-parent-big-image {
   position: relative;
   z-index: 1;
-  min-width: 440px;
+  width: 440px;
 }
 @media only screen and (min-width: 0px) and (max-width: 350px) {
   .biz-about-us-parent-big-image {
@@ -4241,6 +4241,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 .biz-providing-contact {
   margin-left: 70px;
   margin-bottom: 0;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .biz-providing-contact {
+    margin-left: 0;
+  }
 }
 
 .biz-providing-contact .biz-providing-address-icon i {
