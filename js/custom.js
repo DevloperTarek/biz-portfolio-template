@@ -158,16 +158,16 @@
         /*
        Client-Slider
        ============================*/
-        $(".client-logo-wrapper").slick({
+        $(".biz-providint-brand-wrap").slick({
             slidesToShow: 5,
-            infinite: true,
             autoplay: true,
-            draggable: true,
+            autoplaySpeed: 0,
+            speed: 5000,
+            cssEase: 'linear',
+            infinite: true,
+            focusOnSelect: false,
             arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
+            dots:false,
             prevArrow:
                 "<button type='button' class='testimonial-arrow-btn prev-btn'><div class='swip'><div class='title-wrapper'><i class='icon-left-arrow title-1'></i><i class='icon-left-arrow title-2'></i></div></div></button>",
             nextArrow:
@@ -176,7 +176,7 @@
                 {
                     breakpoint: 1199,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 5,
                     },
                 },
                 {
@@ -189,6 +189,12 @@
                     breakpoint: 767,
                     settings: {
                         slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 580,
+                    settings: {
+                        slidesToShow: 1,
                     },
                 },
             ],
@@ -492,24 +498,24 @@
         $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image,.absolute-content-1,.absolute-content-2,.absolute-content-3').tilt({
             // maxTilt: 12,
             // perspective: 1500,
-            maxTilt:        30,   // Max tilt value
-            perspective:    1000, // Perspective value
-            easing:         "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit
-            speed:          500,  // Speed of the enter/exit transition in milliseconds
-            transition:     true, // Set a transition on the enter/exit. This is true by default.
-            axis:           null, // What axis should be enabled. Can be "x" or "y".
-            reset:          true, // If the tilt effect has to be reset on exit. This is true by default.
-            glare:          true, // If it should have a "glare" effect
-            maxGlare:       0.3,  // The maximum opacity of the glare effect (0 to 1)
-            scale:          1  
+            maxTilt: 30,   // Max tilt value
+            perspective: 1000, // Perspective value
+            easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit
+            speed: 500,  // Speed of the enter/exit transition in milliseconds
+            transition: true, // Set a transition on the enter/exit. This is true by default.
+            axis: null, // What axis should be enabled. Can be "x" or "y".
+            reset: true, // If the tilt effect has to be reset on exit. This is true by default.
+            glare: true, // If it should have a "glare" effect
+            maxGlare: 0.3,  // The maximum opacity of the glare effect (0 to 1)
+            scale: 1
         });
         // Tilt custom effect
         let customEffectOfTilt = true;
 
-        $(".absolute-content-1,.absolute-content-2,.absolute-content-3").on('mousedown',function(){
+        $(".absolute-content-1,.absolute-content-2,.absolute-content-3").on('mousedown', function () {
             customEffectOfTilt = false;
         })
-        $(".absolute-content-1,.absolute-content-2,.absolute-content-3").on('mouseup',function(){
+        $(".absolute-content-1,.absolute-content-2,.absolute-content-3").on('mouseup', function () {
             customEffectOfTilt = true;
         })
 

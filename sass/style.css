@@ -4285,6 +4285,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
 }
+@media (max-width: 321px) {
+  .biz-providing-what-we-do-box-wrap {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
 
 .biz-single-providing-what-we-do-box-content {
   background: #fff;
@@ -4383,4 +4388,45 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 
 .biz-single-providing-what-we-do-box:hover .biz-single-providing-what-we-do-box-content {
   bottom: 0;
+}
+
+.biz-single-brand .biz-content {
+  color: #1f1f1f;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Teko", sans-serif;
+  font-weight: 600;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+}
+
+.biz-single-brand {
+  height: 80px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+.biz-providing-brand:hover, .biz-providing-brand:active, .biz-providing-brand:focus {
+  overflow-x: auto;
+}
+
+.biz-single-brand img {
+  /* max-height: 200px; */
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  white-space: nowrap;
+}
+
+.biz-providing-brand {
+  background: #FE6809;
+  color: #ffffff;
+  padding: 20px 0;
 }/*# sourceMappingURL=style.css.map */

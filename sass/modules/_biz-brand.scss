@@ -1,0 +1,43 @@
+.biz-single-brand .biz-content {
+    color: #1f1f1f;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: 'Teko',sans-serif;
+    font-weight: 600;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+.biz-single-brand {
+    height: 80px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+    // overflow-x: auto;
+}
+.biz-providing-brand:hover,.biz-providing-brand:active,.biz-providing-brand:focus{
+    overflow-x: auto;
+}
+
+.biz-single-brand img {
+    /* max-height: 200px; */
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+}
+
+.biz-providing-brand {
+    background: $primary-clr;
+    color: $white;
+    padding: 20px 0;
+}

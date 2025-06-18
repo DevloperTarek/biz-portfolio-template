@@ -4,6 +4,9 @@
     @include xs{
         grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
     }
+    @include rmaxwd(321){
+        grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    }
     gap: 40px;
 }
 
