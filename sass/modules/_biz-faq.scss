@@ -1,0 +1,14 @@
+.biz-providing-faq-area{
+    padding: 140px 0;
+}
+
+.accordion-header {
+    border: 1px solid #f6f6f6;
+}
+
+.biz-providing-main-area .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 40px;
+    align-items: center;
+}

@@ -1,7 +1,6 @@
 (function ($) {
     "use strict";
     $(document).ready(function () {
-
         /*
        Jquery Mobile Menu
        ============================*/
@@ -167,7 +166,7 @@
             infinite: true,
             focusOnSelect: false,
             arrows: false,
-            dots:false,
+            dots: false,
             prevArrow:
                 "<button type='button' class='testimonial-arrow-btn prev-btn'><div class='swip'><div class='title-wrapper'><i class='icon-left-arrow title-1'></i><i class='icon-left-arrow title-2'></i></div></div></button>",
             nextArrow:
@@ -193,6 +192,12 @@
                 },
                 {
                     breakpoint: 580,
+                    settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 350,
                     settings: {
                         slidesToShow: 1,
                     },
@@ -453,8 +458,8 @@
         /*
         Counter Js
         ============================*/
-        $(".counter").counterUp({
-            delay: 10,
+        $(".count").counterUp({
+            delay: 100,
             time: 1000,
         });
 

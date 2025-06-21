@@ -1,0 +1,57 @@
+.biz-faq-circle-area {
+    position: absolute;
+    bottom: -29px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: 230px;
+    background: $primary-clr;
+    border-radius: 50%;
+}
+
+.biz-circle-text-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 196px;
+    height: 196px;
+    animation: roate360 6s linear infinite;
+}
+
+@keyframes roate360{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg
+                                               )
+    }
+}
+
+.counter-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 110px;
+    font-family: "Teko",sans-serif;
+}
+
+.dashed-style-border-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 208px;
+    height: 208px;
+    animation: rotate-360d 8s linear infinite;
+}
+
+@keyframes rotate-360d{
+    100%{
+        transform: translate(-50%, -50%) rotate(-360deg)
+    }
+}

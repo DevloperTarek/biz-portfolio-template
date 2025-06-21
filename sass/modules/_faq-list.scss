@@ -1,0 +1,66 @@
+p.mb-0.faq-desc {}
+
+.faq-list::after {
+    position: absolute;
+    content: "\e4b3";
+    top: 50%;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: #1f1f1f;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+    transform: translateY(-50%);
+    font-family: "Font Awesome 6 pro";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 300;
+    box-shadow: 0 0 2px 0 #000;
+}
+
+.faq-list {
+    position: relative;
+    padding-left: 90px;
+}
+
+.faq-list .faq-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 7px;
+}
+
+
+// Faq Absolute Image
+
+.circle {
+    position: relative;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: circle360 9s linear infinite;
+}
+@keyframes circle360 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.circle span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 16px;
+    font-family: 'Teko',sans-serif;
+    color: $primary-clr;
+    line-height: 0;
+    font-weight: 500;
+    transform-origin: 0 0;
+}
