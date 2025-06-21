@@ -12,7 +12,16 @@
     transition: all .5s ease-out;
     position: absolute;
     top: -33%;
-    right: 15px;
+    right: 60px;
+    @include rmaxwd(1440){
+        right: 50px;
+    }
+    @include sm{
+        right: 30px;
+    }
+    @include rmaxwd(440){
+        top: -45%;
+    }
 }
 
 .biz-project-wrap .slick-arrow i {
@@ -24,11 +33,14 @@
     border-radius: 50px;
 }
 
-.biz-project-wrap .slick-arrow:hover {
+.biz-project-wrap .slick-arrow:hover,.biz-project-wrap .slick-arrow.next-btn {
     background: $primary-clr;
     color: $white;
 }
 
 .biz-project-wrap .slick-arrow.next-btn {
     top: -21%;
+    @include rmaxwd(440){
+        top: -30%;
+    }
 }
