@@ -4603,6 +4603,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 @media only screen and (min-width: 0px) and (max-width: 350px) {
   .biz-single-project-item {
     margin-bottom: 30px;
+    height: 300px;
   }
 }
 
