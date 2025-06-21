@@ -207,15 +207,15 @@
         /*
        Testimonial Slider
        ============================*/
-        $(".testimonial-slider-two").slick({
-            slidesToShow: 3,
+        $(".biz-project-wrap").slick({
+            slidesToShow: 4,
             infinite: true,
             autoplay: false,
             draggable: true,
             arrows: true,
             slidesToScroll: 1,
             loop: true,
-            dots: true,
+            dots: false,
             speed: 1500,
             centerMode: true,
             prevArrow:
@@ -226,15 +226,48 @@
                 {
                     breakpoint: 1400,
                     settings: {
+                        slidesToShow: 3,
+                    },
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
                         slidesToShow: 2,
                     },
                 },
                 {
                     breakpoint: 767,
                     settings: {
+                        slidesToShow: 2,
+                    },
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
                         slidesToShow: 1,
                     },
                 },
+                {
+                    breakpoint: 580,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+
+                {
+                    breakpoint: 450,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                
+                {
+                    breakpoint: 350,
+                    settings: {
+                        slidesToShow: 1,
+                    },
+                },
+                
             ],
         });
 
@@ -500,7 +533,7 @@
         /*
        Jquery Tilt Js
        ============================*/
-        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image,.absolute-content-1,.absolute-content-2,.absolute-content-3').tilt({
+        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image,.absolute-content-1,.absolute-content-2,.absolute-content-3,#biz-faq-image').tilt({
             // maxTilt: 12,
             // perspective: 1500,
             maxTilt: 30,   // Max tilt value

@@ -2,13 +2,19 @@
     height: 494px;
     position: relative;
     z-index: 1;
+    border-radius: 10px;
     overflow: hidden;
+    margin-left: 20px;
+    @include sm{margin-bottom: 30px;}
+    @include xs{
+        margin-bottom: 30px;
+    }
 }
 
 .biz-single-project-content {
     position: absolute;
-    left: 10%;
-    width: 80%;
+    left: 15%;
+    width: 70%;
     background: $primary-clr;
     border-radius: 5px;
     transition: all .5s ease-out;
@@ -19,6 +25,9 @@
     opacity: 0;
     visibility: hidden;
     transition-property: transform;
+    @include xs{
+        padding: 20px 20px;
+    }
 }
 
 .biz-single-project-content .biz-single-project-content-sub-title {
@@ -32,11 +41,18 @@
 .biz-single-project-content .biz-single-content-title {
     color: $white;
     line-height: 30px;
+    @include xs{
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 
 .biz-single-project-content .biz-project-arrow-icon {
     position: absolute;
     right: -22px;
+    @include xs{
+        right: -15px;
+    }
     top: 50%;
     transform: translateY(-50%);
 }
@@ -54,6 +70,11 @@
     transition: all .5s ease-out;
     font-size: 20px;
     font-weight: 300;
+    @include xs{
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
 }
 
 .biz-single-project-item::after {
@@ -75,7 +96,7 @@
 }
 
 .biz-single-project-item:hover > .biz-single-project-content {
-    animation: flipInX 1s ease-out;
+    animation: flipInX 1.2s ease-out;
     transform: translateY(0);
     opacity:1;
     visibility: visible;
