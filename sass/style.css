@@ -4732,11 +4732,6 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
     right: 30px;
   }
 }
-@media (max-width: 440px) {
-  .biz-project-wrap .slick-arrow {
-    top: -45%;
-  }
-}
 
 .biz-project-wrap .slick-arrow i {
   font-size: 20px;
@@ -4754,9 +4749,4 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 
 .biz-project-wrap .slick-arrow.next-btn {
   top: -21%;
-}
-@media (max-width: 440px) {
-  .biz-project-wrap .slick-arrow.next-btn {
-    top: -30%;
-  }
 }/*# sourceMappingURL=style.css.map */

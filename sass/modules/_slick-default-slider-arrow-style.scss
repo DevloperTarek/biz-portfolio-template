@@ -19,9 +19,6 @@
     @include sm{
         right: 30px;
     }
-    @include rmaxwd(440){
-        top: -45%;
-    }
 }
 
 .biz-project-wrap .slick-arrow i {
@@ -40,7 +37,4 @@
 
 .biz-project-wrap .slick-arrow.next-btn {
     top: -21%;
-    @include rmaxwd(440){
-        top: -30%;
-    }
 }
