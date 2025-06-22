@@ -9,7 +9,15 @@
     z-index: -1;
     border-radius: 10px;
 }
-
+.biz-about-us-area{
+    padding-top: 140px;
+    @include sm{
+        padding-top: 60px;
+    }
+    @include rmaxwd(330){
+        padding-top: 60px;
+    }
+}
 .biz-about-us-area .container {
     display: flex;
     align-items: self-start;

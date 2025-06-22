@@ -2,7 +2,8 @@
   position: fixed;
   right: 40px;
   bottom: 20px;
-  z-index: 9999;
+  display: block;
+  z-index: 999999;
 }
 .scrollup-btn {
   display: flex;
