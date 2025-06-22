@@ -3196,6 +3196,12 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 .header-menu-area {
   position: relative;
 }
+.header-menu-area.sticky_menu {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: sticky;
+}
 
 .header-menu-area::before {
   position: absolute;
@@ -3690,13 +3696,13 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
   text-transform: uppercase;
   color: #FE6809;
   margin-bottom: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .biz-section-title .biz-title.style-1, .biz-section-title .biz-title {
@@ -4935,9 +4941,19 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .biz-team-member-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (max-width: 300px) {
+  .biz-team-member-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
 
 .biz-team-member-img {
-  background: red;
+  background: #1f1f1f;
   border-radius: 350px;
   overflow: hidden;
 }
@@ -4958,7 +4974,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   bottom: 0;
   text-align: center;
 }
-@media only screen and (min-width: 0px) and (max-width: 350px) {
+@media (max-width: 330px) {
   .biz-team-member-info {
     height: 180px;
   }
@@ -4991,7 +5007,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   left: 50%;
   transform: translateX(-50%);
 }
-@media only screen and (min-width: 0px) and (max-width: 350px) {
+@media (max-width: 330px) {
   .biz-team-member-info .biz-team-member-desc .biz-team-member-socal-active {
     top: -83%;
   }
@@ -5092,4 +5108,112 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
 .biz-single-team-member:hover .biz-team-member-img::after {
   visibility: visible;
   transform: scale(1);
+}
+
+.input-field input, .input-field textarea {
+  width: 100%;
+  background: #ddd;
+  font-size: 16px;
+  line-height: 30px;
+  padding: 14px 15px;
+  font-family: "Teko", sans-serif;
+  color: #707070;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-field textarea {
+  height: 140px;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.input-field label {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 0 10px;
+  background: #fff;
+  font-family: "Teko", sans-serif;
+  transition: all 0.5s ease-out;
+  transition-property: top;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.input-field input:focus ~ label, .input-field textarea:focus ~ label {
+  opacity: 1;
+  visibility: visible;
+  top: -7px;
+}
+
+.biz-contact-area {
+  background: #1f1f1f;
+  height: 676px;
+  overflow: hidden;
+  position: relative;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .biz-contact-area {
+    height: 600px;
+  }
+}
+
+.biz-contact-area .biz-shapes {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .biz-contact-area .biz-shapes {
+    bottom: 0;
+  }
+}
+
+.biz-contact-area .biz-shapes .biz-contact-shape-1 {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.biz-contact-area .biz-shapes .biz-contact-shape-2 {
+  left: 45%;
+  top: 40px;
+  position: absolute;
+}
+
+.biz-contact-area .biz-shapes .biz-contact-shape-4 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .biz-contact-area .biz-shapes .biz-contact-shape-4 {
+    width: 500px;
+  }
+}
+
+.biz-contact-area .biz-shapes .biz-contact-shape-3 {
+  position: absolute;
+  left: 70%;
+  top: 0;
+  bottom: 0;
+}
+
+.biz-contact-form-wraper {
+  max-width: 460px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

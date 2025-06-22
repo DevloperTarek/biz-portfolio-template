@@ -38,11 +38,11 @@
         const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
 
         if (100 < $(window).scrollTop()) {
-            $(".header-menu-area.sticky-header").addClass("sticky_menu");
+            $(".header-menu-area").addClass("sticky_menu");
         }
 
         if (height > 1400) {
-            const nav = $(".header-menu-area.sticky-header");
+            const nav = $(".header-menu-area");
             let scrolled = false;
             $(window).scroll(function () {
                 if (100 < $(window).scrollTop() && !scrolled) {
@@ -528,7 +528,7 @@
         /*
        Jquery Nice Select Js
        ============================*/
-        $('select.select_option, select.wpcf7-select').niceSelect();
+        $('select.select_option, select.wpcf7-select,select').niceSelect();
 
         /*
        Jquery Tilt Js

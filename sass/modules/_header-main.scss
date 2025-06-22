@@ -1,6 +1,12 @@
 .header-menu-area {
     // background: #18191D;
     position: relative;
+    &.sticky_menu{
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: sticky;
+    }
 }
 .header-menu-area::before{
     position: absolute;
