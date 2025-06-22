@@ -1,3 +1,10 @@
+.biz-providing-project-area{
+    background-color: $light-background;
+    margin-bottom: 140px;
+    @include xs{
+        margin-bottom: 80px;
+    }
+}
 .biz-single-project-item {
     height: 494px;
     position: relative;
@@ -5,7 +12,7 @@
     border-radius: 10px;
     overflow: hidden;
     margin-left: 20px;
-    @include sm{margin-bottom: 30px;}
+    @include sm{margin-bottom: 30px; height: 350px;}
     @include xs{
         margin-bottom: 30px;
         height: 300px;

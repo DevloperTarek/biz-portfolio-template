@@ -1,0 +1,105 @@
+.biz-call-to-action .shape-absolute-area {
+    width: 196px;
+    height: 258px;
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    // left: 0;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    animation: translateUpper 3s ease-out .1s infinite alternate;
+    box-shadow: 0 0 50px 0 none;
+    display: block;
+    @include lg{
+        width: 150px;
+        height: 200px;
+    }
+    @include md{
+        display: none;
+    }
+    @include sm{display: none;}
+}
+
+.biz-call-to-action {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: $primary-clr;
+    padding: 93px 105px;
+    border-radius: 10px;
+    @include lg{
+        padding: 50px 80px;
+    }
+    @include sm{
+        padding: 30px;
+    }
+    @include xs{
+        padding: 20px;
+        text-align: center;
+    }
+    @include rmaxwd(290){
+        padding: 15px;
+    }
+    @include rmaxwd(450){
+        text-align: center;
+    }
+    @include md{
+        padding: 60px;
+    }
+}
+
+.biz-call-action-content .call-action-title {
+    @include lg{
+        font-size: 45px;
+        line-height: 50px;
+        margin-left: 220px;
+    }
+    @include sm{
+        font-size: 40px;
+        margin-left: 0;
+        line-height: 50px;
+        font-weight: 600;
+    }
+    @include xs{
+        font-size: 31px;
+        margin-left: 0;
+        line-height: 40px;
+        font-weight: 500;
+    }
+    @include rmaxwd(992){
+        margin-left: 0;
+    }
+
+    color: #fff;
+    margin-left: 214px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.biz-call-to-action .shape-absolute-area .star-shape-img {
+    width: 43px;
+    height: 41px;
+    display: block;
+    position: absolute;
+    top: 29px;
+    left: 24px;
+    transition: all .5s ease-out;
+    animation: round360 2s linear infinite alternate;
+}
+@keyframes round360{
+    0%{opacity:.1}
+    100%{
+        transform: rotate(360deg);
+        opacity:1;
+    }
+   
+}
+
+@keyframes translateUpper{
+    100%{
+        transform:translateX(-30px) translateY(-30px) rotate(15deg) skewY(-10deg);
+        background: $primary-clr;
+        box-shadow: 0 0 50px 0 $primary-clr;
+    }
+}

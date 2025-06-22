@@ -18,6 +18,10 @@
     }
     @include sm{
         right: 30px;
+        top: -45%;
+    }
+    @include rmaxwd(350){
+        top: -60%;
     }
 }
 
@@ -37,4 +41,10 @@
 
 .biz-project-wrap .slick-arrow.next-btn {
     top: -21%;
+    @include sm{
+        top: -25%;
+    }
+    @include rmaxwd(350){
+        top: -40%;
+    }
 }
