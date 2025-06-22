@@ -13,6 +13,9 @@
     @include rmaxwd(1180){
         padding-left: 60px;
     }
+    @include sm{
+        padding-left: 0;
+    }
 }
 
 .biz-providing-list {

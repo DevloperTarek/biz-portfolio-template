@@ -4171,6 +4171,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
     padding-left: 60px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .biz-content-area-wrapper {
+    padding-left: 0;
+  }
+}
 
 .biz-providing-list {
   color: #1f1f1f;
