@@ -5272,6 +5272,11 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 40px;
 }
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .biz-blog-wraper {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
 
 .biz-single-blog-item {
   position: relative;
