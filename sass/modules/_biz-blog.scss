@@ -2,9 +2,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     gap: 40px;
-    @include xs{
-        grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    }
 }
 
 .biz-single-blog-item {
@@ -14,6 +11,13 @@
     box-shadow: 0 60px 60px 0 rgba(215, 215, 215,.15);
     border-radius: 10px;
     cursor: pointer;
+    @include xs{
+        width: 330px;
+    }
+    @include rmaxwd(325){
+        width: 300px;
+    }
+    @include rmaxwd(290){width: 260px;}
 }
 
 .biz-single-blog-item .biz-single-blog-image {
@@ -29,7 +33,7 @@
 }
 
 .biz-single-blog-item .biz-single-blog-image .biz-single-blog-tagline .biz-single-tagline-date {
-    background: red;
+    background: $primary-clr;
     display: flex;
     align-items: flex-end;
     justify-content: end;
@@ -41,13 +45,13 @@
         width: 320px;
     }
     @include xs{
-        width: 250px;
+        width: 300px;
     }
-    @include rmaxwd(315){
-        width: 250px;
-    }
+    // @include rmaxwd(315){
+    //     width: 250px;
+    // }
     @include rmaxwd(280){
-        width: 220px;
+        width: 230px;
     }
 }
 
