@@ -83,6 +83,10 @@
     font-family: 'Teko',sans-serif;
     margin-top: 30px;
     margin-bottom: 10px;
+    @include xs{
+        font-size: 25px;
+    }
+    @include rmaxwd(330){font-size: 22px; line-height: 30px;}
 }
 .biz-single-providing-what-we-do-box-content .biz-what-we-do-more-des{
     opacity: 0;

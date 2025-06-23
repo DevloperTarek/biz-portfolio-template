@@ -533,7 +533,7 @@
         /*
        Jquery Tilt Js
        ============================*/
-        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image,.absolute-content-1,.absolute-content-2,.absolute-content-3,#biz-faq-image,#biz-call-action-area,#biz-single-team-member').tilt({
+        $('#tilt-effect-on-box,#tilt-effect-on-box-2,#tilt-effect-on-box-3,#biz-about-video-play-image,#biz-about-parent-image,.absolute-content-1,.absolute-content-2,.absolute-content-3,#biz-faq-image,#biz-call-action-area,#biz-single-team-member,.biz-single-blog-item').tilt({
             // maxTilt: 12,
             // perspective: 1500,
             maxTilt: 30,   // Max tilt value

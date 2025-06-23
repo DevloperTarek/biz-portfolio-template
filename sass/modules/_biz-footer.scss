@@ -1,0 +1,172 @@
+.biz-footer-area{position: relative; z-index: 1;}
+.biz-footer-area::after {
+    content: "";
+    @include overlay($header-top-bg);
+    @include bg-opacity($header-top-bg,.8);
+    z-index: -1;
+}
+
+.biz-footer-head-wid {
+    background: $primary-clr;
+    border-radius: 5px;
+    padding: 30px 100px 30px 70px;
+    box-shadow: 0 60px 60px 0 rgba(130,130,130,.10);
+    @include xs{
+        padding: 30px;
+    }
+}
+.biz-footer-head-col-1st i {
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.biz-footer-head-title {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: $white;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.biz-footer-head-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #fff;
+    white-space: nowrap;
+}
+.biz-email-field input {
+    padding: 13px 33px;
+    @include xs{padding: 15px 15px;}
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #BABABA;
+    text-transform: capitalize;
+    font-family: 'Teko',sans-serif;
+    border-radius: 5px;
+    outline: none;
+    transition: all .5s ease-out;
+    width: 100%;
+}
+
+.biz-email-field input::placeholder {
+    font-size: 20px;
+    font-weight: 400;
+    color: #BABABA;
+}
+
+.biz-email-field .mail-label h6 {
+    font-size: 20px;
+    line-height: 30px;
+    width: 46px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.biz-email-field .mail-label {
+    cursor: pointer;
+    transition: all .5s ease-out;
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+}
+
+.biz-footer-main-part-socal-links span i {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #454A53;
+    border-radius: 50px;
+    background: transparent;
+    transition: all .5s ease-out;
+    transition-property: background-color;
+    overflow: hidden;
+}
+
+.biz-footer-main-part-socal-links span i:hover,.biz-footer-main-part-socal-links span i.active {
+    background: #E9A132;
+    color: #fff;
+}
+
+.biz-footer-main-single-item {
+    width: 94px;
+    height: 70px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1;
+    cursor: pointer;
+    font-weight: 600;
+    object-fit: cover;
+    width: 100%;
+    &::before{
+        content: "";
+        @include overlay($primary-clr);
+        @include bg-opacity($primary-clr,.8);
+        transform: scale(.5);
+        visibility: hidden;
+        transition: all .5s ease-out;
+        transition-property: transform;
+        z-index: -1;
+    }
+    &:hover::before{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+.biz-footer-main-single-item i {
+    transform: translate(-20px,15px) rotate(-360deg);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-out;
+}
+
+.biz-footer-main-single-item:hover i {
+    transform: translate(0,0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.biz-footer-main-3rd-part {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+    grid-template-columns: repeat(3,93px);
+    gap: 15px;
+    @include sm{
+        grid-template-columns: repeat(auto-fit,minmax(80px,1fr));
+    }
+}
+
+// Footer Bottom
+
+.biz-footer-bottom-area {
+    background: #252525;
+}
+
+.biz-footer-bottom-area p {
+    font-size: 12px;
+    line-height: 29px;
+    letter-spacing: .1px;
+    font-weight: 400;
+}
