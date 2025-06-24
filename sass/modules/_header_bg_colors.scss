@@ -1,6 +1,16 @@
+.header-top-area-wrapper{
+    &.style-1{
+        &.header_top_bg{
+            background-color: $white;
+        }
+    }
+}
+
 .header_top_bg{
     background-color: $header-top-bg;
 }
+
+.header-menu-area.style-1::before{background-color: #fff; opacity: 1;}
 .header_main_bg{
     background-color: $header-main-bg;
 }

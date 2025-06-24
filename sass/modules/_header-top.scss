@@ -1,9 +1,12 @@
-.header-top-left-area .mail-chim {
-    position: relative;
-    padding-left: 44px;
-    transition: all .5s ease-out;
+.header-top-left-area {
+    .mail-chim {
+        position: relative;
+        padding-left: 44px;
+        transition: all .5s ease-out;
+    }
 }
-.header-top-left-area .mail-chim:hover{
+
+.header-top-left-area .mail-chim:hover {
     color: $primary-clr;
     display: block;
     transform: scale(1.1);
@@ -15,43 +18,92 @@
 
 // Nav Menu
 
+.header-top-left-area {
+    &.style-1 {
+        .location {
+            p {
+                font-size: 12px;
+                color: #1f1f1f;
+            }
+        }
+
+        .mail-chim {
+            span{
+                a {
+                    color: #1f1f1f;
+                }
+            }
+        }
+    }
+}
+
 nav.header-top-right-menu .menu-unorder-list .menu-list {
     position: relative;
     padding-left: 44px;
 }
-nav.header-top-right-menu .menu-unorder-list .menu-list .menu-link{
-    font-size: 12px;
-    line-height: 29px;
-    transition: all .5s ease-out;
-    color: $white;
+
+.header-top-right-menu {
+    &.style-1 {
+        .menu-unorder-list {
+            .menu-list {
+                .menu-link {
+                    color: #1f1f1f;
+                }
+            }
+        }
+    }
+
+    .menu-unorder-list {
+        .menu-list {
+            .menu-link {
+                font-size: 12px;
+                line-height: 29px;
+                transition: all .5s ease-out;
+                color: $white;
+            }
+        }
+    }
 }
-nav.header-top-right-menu .menu-unorder-list .menu-list .menu-link:hover{
+
+.header-top-right-menu .menu-unorder-list .menu-list .menu-link:hover {
     color: $primary-clr;
     display: block;
     transform: scale(1.1);
 }
-nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1){
+
+nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1) {
     padding-left: 0;
 }
 
 nav.header-top-right-menu .menu-unorder-list .menu-list::before {
     @include before-slash-icon;
 }
+
 nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
     content: "";
     display: none;
 }
 
 // color change
-.header-top-area a {
-    color: $white;
+.header-top-right-area {
+    &.style-1 {
+        a {
+            color: $header-text-clr;
+        }
+    }
+
+    a {
+        color: $white;
+    }
 }
 
 // Border bottom
-.header-top-area{border-bottom: 1px solid $header-text-clr;
+.header-top-area {
+    border-bottom: 1px solid $header-text-clr;
 }
-.header-top-area-wrapper{
-     @include xs{
+
+.header-top-area-wrapper {
+    @include xs {
         display: none;
     }
 }
