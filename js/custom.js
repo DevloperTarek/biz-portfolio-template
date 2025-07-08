@@ -668,6 +668,4 @@
         animateOnScroll();
 
     });
-})
-})
-(jQuery);
+})(jQuery);
