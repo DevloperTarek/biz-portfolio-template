@@ -4317,7 +4317,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   justify-content: center;
   margin: auto;
   border-radius: 50px;
-  background-color: red;
+  background-color: #FE6809;
   border: 3px solid rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
