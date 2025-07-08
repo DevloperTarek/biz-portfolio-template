@@ -89,4 +89,16 @@
 @import "./modules/biz-contact-us";
 @import "./modules/biz-blog";
 @import "./modules/biz-google-map";
+@import "./modules/search_bar";
 @import "./modules/biz-footer";
+
+// Parties
+
+@import "./partials/nav-sec-sty";
+@import "./partials/biz-serv-card-sty";
+
+// Pages
+
+@import './pages/ta_portfolio_head/ta_portfolio_head';
+@import './pages/ta_portfolio_side/_ta_portfolio_side';
+@import './pages/ta_main_slider/ta_main_slider';

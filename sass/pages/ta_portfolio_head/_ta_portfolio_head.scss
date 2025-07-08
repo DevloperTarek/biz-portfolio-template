@@ -1,0 +1,54 @@
+.ta_portfolio_head .ta_portfolio_socal_link {
+    line-height: 1;
+}
+
+.ta_portfolio_head .ta_portfolio_socal_link i {
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1f1f1f;
+    font-size: 20px;
+    font-weight: 300;
+    color: #1f1f1f;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+}
+
+.ta_portfolio_head .ta_portfolio_socal_link {
+    i{
+        &::after,&.active::after {
+            position: absolute;
+            content: "";
+            top: 100%;
+            left: -8%;
+            width: 100%;
+            background:red;
+            height: 20%;
+            z-index:-1;
+            visibility: hidden;
+            opacity:.4;
+            transform: translate(-50%,-50%) skewY(-25deg);
+        }
+        &:hover::after,&.active::after{
+            animation: scrollFulWidth 2s ease-out forwards;
+            visibility: visible;
+        }
+    }
+}
+
+@keyframes scrollFulWidth{
+    100%{
+        transform:translate(-50%,-50%) skewY(25deg);
+        top:50%;
+        left:50%;
+        bottom:0;
+        width:200%;
+        height:220%
+    }
+}

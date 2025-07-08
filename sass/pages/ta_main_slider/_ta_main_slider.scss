@@ -1,0 +1,33 @@
+
+.single-ta-portfolio_slider-content{
+    max-width: 800px;
+    @include rmaxwd(580){
+        max-width: 500px;
+    }
+    @include xs{
+        max-width: 300px;
+    }
+    width: 100%;
+    margin: auto;
+}
+.single-ta-portfolio_slider-content .sub-title {
+    color: $primary-clr; line-height: 30px; letter-spacing: 11px;font-weight: 500;font-size: 13px;text-transform: uppercase;
+    @include xs{
+        font-size: 11px;
+        line-height: 1;
+    }
+}
+
+.single-ta-portfolio_slider-content .title {
+    color: $white;
+    font-size: 60px;
+    line-height: 80px;
+    @include xs{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+.single-ta-portfolio_slider-content .ta_portfolio_desc {
+    color: #fff;
+}

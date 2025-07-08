@@ -50,7 +50,7 @@
 
 <body>
     <!-- Header start -->
-    <header class="header-area">
+    <header class="header-area fixed-header sticky-header">
         <!-- Header Top Start -->
         <div class="header-top-area-wrapper header_top_bg">
             <div class="container-fluid">
@@ -58,8 +58,10 @@
                     <!-- Header top Left Start -->
                     <div class="header-top-left-area d-flex align-items-center">
                         <address class="location mb-0">
-                            <p class="mb-0"><span class="dark-clr">Address :</span> 3517 W. Gray St. Utica, Pennsylvania
-                                57867</p>
+                            <p class="mb-0 header-top-address-text"><span class="dark-clr">Address :</span> 3517 W. Gray
+                                St. Utica, Pennsylvania
+                                57867
+                            </p>
                         </address>
                         <address class="mail-chim mb-0">
                             <span><a href="mailto:info@company.com">info@company.com</a></span>
@@ -109,7 +111,7 @@
                             <ul class="biz-menu-unorder-list m-0 p-0">
                                 <li class="biz-menu-list dropdown active"><a href="index.html"
                                         class="biz-menu-link">Home</a>
-                                    <ul class="biz-dropdown-submenu m-0 p-0">
+                                    <ul class="biz-dropdown-submenu m-0">
                                         <li><a href="index.html">Home page 1</a></li>
                                         <li><a href="index-2.html">Home page 2</a></li>
                                         <li><a href="index.html">Home page 3</a></li>
@@ -119,7 +121,7 @@
                                 <li class="biz-menu-list"><a href="index.html" class="biz-menu-link">services</a></li>
                                 <li class="biz-menu-list"><a href="index.html" class="biz-menu-link">portfolio</a></li>
                                 <li class="biz-menu-list dropdown"><a href="index.html" class="biz-menu-link">blog</a>
-                                    <ul class="biz-dropdown-submenu m-0 p-0">
+                                    <ul class="biz-dropdown-submenu m-0">
                                         <li><a href="blog.html">Blog page 1</a></li>
                                         <li><a href="blog.html">Blog Details page</a></li>
                                         <li><a href="blog.html">Project Page</a></li>
@@ -145,8 +147,9 @@
                     <!-- Header Action btn area -->
 
                     <div class="header-action-area d-flex align-items-center">
-                        <div class="header-action-btn">
-                            <a href="contact.html" class="header-action primary-btn action-btn">GET FREE QUTE</a>
+                        <div class="header-action-btn d-inline-block">
+                            <a href="#" class="header-action primary-btn action-btn d-inline-block">GET FREE
+                                QUTE</a>
                         </div>
                         <!-- Header Search btn -->
 
@@ -218,8 +221,8 @@
                                 </div>
                             </span>
                         </h1>
-                        <div class="biz-primary-btn">
-                            <a href="#" class="primary-btn">Read More</a>
+                        <div class="header-action-btn d-inline-block">
+                            <a href="#" class="header-action primary-btn action-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -248,8 +251,8 @@
                                 </div>
                             </span>
                         </h1>
-                        <div class="biz-primary-btn">
-                            <a href="#" class="primary-btn">Read More</a>
+                        <div class="header-action-btn d-inline-block">
+                            <a href="#" class="header-action primary-btn action-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -278,8 +281,8 @@
                                 </div>
                             </span>
                         </h1>
-                        <div class="biz-primary-btn">
-                            <a href="#" class="primary-btn">Read More</a>
+                        <div class="header-action-btn d-inline-block">
+                            <a href="#" class="header-action primary-btn action-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -451,7 +454,9 @@
 
                 <div
                     class="biz-providing-bottom d-flex flex-column flex-md-row align-items-start align-items-md-center gap-5">
-                    <a href="#" class="primary-btn">Read more</a>
+                    <div class="header-action-btn d-inline-block">
+                        <a href="#" class="header-action primary-btn action-btn text-black">Read More</a>
+                    </div>
                     <address class="biz-providing-contact d-flex flex-column flex-md-row align-items-center gap-3">
                         <span class="biz-providing-address-icon"><i class="fas fa-phone"></i></span>
                         <div class="biz-providing-cotact-content">
@@ -838,7 +843,9 @@
                 <div
                     class="biz-call-action-content d-flex flex-column gap-4 flex-md-row align-items-md-center justify-content-around">
                     <h2 class="call-action-title mb-0">Let's we talk about the business <br> for better grow up</h2>
-                    <span><a href="#" class="primary-btn bg-black">All services</a></span>
+                    <div class="header-action-btn d-inline-block">
+                        <a href="#" class="header-action primary-btn action-btn">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1059,8 +1066,9 @@
                     <!-- Third Textarea group -->
 
                     <!-- Send Message Action Btn -->
-
-                    <a href="#" type="submit" class="primary-btn d-inline-block">Send Message</a>
+                    <div class="header-action-btn d-inline-block">
+                        <a href="#" type="submit" class="primary-btn d-inline-block text-white">Send Message</a>
+                    </div>
                     <!-- Send Message Action Btn -->
                 </form>
             </div>
@@ -1095,7 +1103,8 @@
 
                 <div class="biz-single-blog-item">
                     <!-- Biz Single Blog Image -->
-                    <div class="biz-single-blog-image custom-bg" style="background-image: url('./images/biz-blog-image/biz-blog-image-1.png');">
+                    <div class="biz-single-blog-image custom-bg"
+                        style="background-image: url('./images/biz-blog-image/biz-blog-image-1.png');">
                         <div class="biz-single-blog-tagline">
                             <div class="biz-single-tagline-date">
                                 <!-- Biz Single Tagline Calender -->
@@ -1110,7 +1119,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <span class="calender-date">By admin</span>
                                 </span>
-                                
+
                                 <!-- Biz Single Tagline Admin -->
                             </div>
                         </div>
@@ -1120,7 +1129,8 @@
                     <!-- Biz Single Blog Content -->
 
                     <div class="biz-single-blog-content">
-                        <h3 class="biz-single-blog-title mb-0 text-center">What services does your <br /> business provide?</h3>
+                        <h3 class="biz-single-blog-title mb-0 text-center">What services does your <br /> business
+                            provide?</h3>
                         <hr class="horizonal-line" />
                         <div class="biz-single-blog-footer d-flex align-items-center justify-content-between">
                             <h6 class="mb-0">Read More</h6>
@@ -1136,7 +1146,8 @@
 
                 <div class="biz-single-blog-item">
                     <!-- Biz Single Blog Image -->
-                    <div class="biz-single-blog-image custom-bg" style="background-image: url('./images/biz-blog-image/biz-blog-image-1.png');">
+                    <div class="biz-single-blog-image custom-bg"
+                        style="background-image: url('./images/biz-blog-image/biz-blog-image-1.png');">
                         <div class="biz-single-blog-tagline">
                             <div class="biz-single-tagline-date">
                                 <!-- Biz Single Tagline Calender -->
@@ -1151,7 +1162,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <span class="calender-date">By admin</span>
                                 </span>
-                                
+
                                 <!-- Biz Single Tagline Admin -->
                             </div>
                         </div>
@@ -1161,7 +1172,8 @@
                     <!-- Biz Single Blog Content -->
 
                     <div class="biz-single-blog-content">
-                        <h3 class="biz-single-blog-title mb-0 text-center">What services does your <br /> business provide?</h3>
+                        <h3 class="biz-single-blog-title mb-0 text-center">What services does your <br /> business
+                            provide?</h3>
                         <hr class="horizonal-line" />
                         <div class="biz-single-blog-footer d-flex align-items-center justify-content-between">
                             <h6 class="mb-0">Read More</h6>
@@ -1177,7 +1189,8 @@
 
                 <div class="biz-single-blog-item">
                     <!-- Biz Single Blog Image -->
-                    <div class="biz-single-blog-image custom-bg" style="background-image: url('./images/biz-blog-image/biz-blog-image-1.png');">
+                    <div class="biz-single-blog-image custom-bg"
+                        style="background-image: url('./images/biz-blog-image/biz-blog-image-1.png');">
                         <div class="biz-single-blog-tagline">
                             <div class="biz-single-tagline-date">
                                 <!-- Biz Single Tagline Calender -->
@@ -1192,7 +1205,7 @@
                                     <i class="fas fa-calendar"></i>
                                     <span class="calender-date">By admin</span>
                                 </span>
-                                
+
                                 <!-- Biz Single Tagline Admin -->
                             </div>
                         </div>
@@ -1202,7 +1215,8 @@
                     <!-- Biz Single Blog Content -->
 
                     <div class="biz-single-blog-content">
-                        <h3 class="biz-single-blog-title mb-0 text-center">What services does your <br /> business provide?</h3>
+                        <h3 class="biz-single-blog-title mb-0 text-center">What services does your <br /> business
+                            provide?</h3>
                         <hr class="horizonal-line" />
                         <div class="biz-single-blog-footer d-flex align-items-center justify-content-between">
                             <h6 class="mb-0">Read More</h6>
@@ -1224,17 +1238,35 @@
 
     <section class="biz-google-map">
         <div class="biz-responsive-google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9286.253515632374!2d89.32685434926279!3d24.940254042931137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcff25aefeba1d%3A0xd9b7fed928c7873d!2sPalashbari!5e0!3m2!1sen!2sbd!4v1750656566615!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9286.253515632374!2d89.32685434926279!3d24.940254042931137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fcff25aefeba1d%3A0xd9b7fed928c7873d!2sPalashbari!5e0!3m2!1sen!2sbd!4v1750656566615!5m2!1sen!2sbd"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
     <!-- Biz Google Map -->
 
+    <!-- Search Bar -->
+    <div class="biz-search-bar-area pt-70 pb-70 shadow-sm">
+        <form action="index.html" class="search-form">
+            <div class="input-field position-relative">
+                <input type="text" name="search" id="search" class="w-100" placeholder="Your chooice to search.." required />
+                <label for="search" class="search-field">Search Field</label>
+            </div>
+        </form>
+        <div class="biz-close-search-bar">
+            <a href="#" class="close-search-bar"><i class="fas fa-times text-white"></i></a>
+        </div>
+    </div>
+
     <!-- Biz Footer Area -->
 
-    <footer class="biz-footer-area custom-bg position-relative pt-25" style="background-image: url('./images/biz-footer/biz-footer-bg.jpg');">
+    <footer class="biz-footer-area custom-bg position-relative pt-25"
+        style="background-image: url('./images/biz-footer/biz-footer-bg.jpg');">
         <div class="container">
             <!-- Head -->
-            <div class="biz-footer-head-wid d-flex flex-column gap-2 flex-md-row align-items-md-center justify-content-md-between mb-25">
+            <div
+                class="biz-footer-head-wid d-flex flex-column gap-2 flex-md-row align-items-md-center justify-content-md-between mb-25">
                 <div class="biz-footer-head-col-1st d-flex align-items-center gap-2">
                     <i class="fal fa-envelope-open-text"></i>
                     <div>
@@ -1246,7 +1278,9 @@
                     <form action="#">
                         <div class="biz-email-field position-relative">
                             <input type="email" name="mail" id="mail" placeholder="Enter your mail." />
-                            <label for="mail" class="mail-label"><h6 class="mb-0">GO</h6></label>
+                            <label for="mail" class="mail-label">
+                                <h6 class="mb-0">GO</h6>
+                            </label>
                         </div>
                     </form>
                 </div>
@@ -1255,17 +1289,22 @@
 
             <!-- Middle -->
 
-            <div class="biz-footer-middle-wid d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-md-between">
+            <div
+                class="biz-footer-middle-wid d-flex flex-column flex-md-row gap-3 align-items-md-center justify-content-md-between">
                 <address class="biz-footer-contact-number-wid mb-0">
                     <p class="mb-0 primary-clr">Have Any Question?</p>
-                    <a href="tel:+ 010 2345 6780" class="d-block"><h3 class="number text-white">+ 010 2345 6780 </h3></a>
+                    <a href="tel:+ 010 2345 6780" class="d-block">
+                        <h3 class="number text-white">+ 010 2345 6780 </h3>
+                    </a>
                 </address>
                 <a href="index.html" class="logo">
                     <img src="./images/logo/BigGenious-logo.png" alt="Footer logo" />
                 </a>
                 <address class="biz-footer-contact-number-wid mb-0">
                     <p class="mb-0 primary-clr">Send Your Email</p>
-                    <a href="mailto:wkrebs@verizon.net" class="d-block"><h3 class="number text-white">wkrebs@verizon.net</h3></a>
+                    <a href="mailto:wkrebs@verizon.net" class="d-block">
+                        <h3 class="number text-white">wkrebs@verizon.net</h3>
+                    </a>
                 </address>
             </div>
             <!-- Middle -->
@@ -1273,10 +1312,13 @@
         <hr class="horizontal-line" />
         <div class="biz-footer-main-part-wraper pt-45 pb-45">
             <div class="container">
-                <div class="biz-footer-main-part-wid d-flex flex-column gap-3 flex-md-row align-items-md-center justify-content-md-between">
+                <div
+                    class="biz-footer-main-part-wid d-flex flex-column gap-3 flex-md-row align-items-md-center justify-content-md-between">
                     <!-- Biz Footer Main 1st Part -->
                     <div class="biz-footer-main-1st-part">
-                        <p class="mb-30 text-white">I've been using [business name] for the past year and I'm so glad I did. Their products <br> and services are top-notch and their customer service is amazing. I would highly <br> recommend them to anyone</p>
+                        <p class="mb-30 text-white">I've been using [business name] for the past year and I'm so glad I
+                            did. Their products <br> and services are top-notch and their customer service is amazing. I
+                            would highly <br> recommend them to anyone</p>
                         <div class="biz-footer-main-part-socal-links d-flex align-items-center gap-4">
                             <span><i class="fab fa-facebook-f"></i></span>
                             <span><i class="fab fa-twitter active"></i></span>
@@ -1299,22 +1341,28 @@
                     <!-- Biz Footer Main 3rd Part -->
 
                     <div class="biz-footer-main-3rd-part grid-area">
-                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg" style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
+                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg"
+                            style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
                             <span><i class="fal fa-plus"></i></span>
                         </div>
-                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg" style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
+                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg"
+                            style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
                             <span><i class="fal fa-plus"></i></span>
                         </div>
-                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg" style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
+                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg"
+                            style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
                             <span><i class="fal fa-plus"></i></span>
                         </div>
-                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg" style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
+                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg"
+                            style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
                             <span><i class="fal fa-plus"></i></span>
                         </div>
-                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg" style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
+                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg"
+                            style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
                             <span><i class="fal fa-plus"></i></span>
                         </div>
-                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg" style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
+                        <div class="biz-footer-main-single-item position-relative d-flex align-items-center justify-content-center custom-bg"
+                            style="background-image: url('./images/biz-footer/biz-footer-main-1st.png');">
                             <span><i class="fal fa-plus"></i></span>
                         </div>
                     </div>

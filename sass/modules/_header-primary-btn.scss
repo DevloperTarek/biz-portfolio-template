@@ -8,19 +8,15 @@
     display: inline-block;
     line-height: 1;
     padding: 15px 30px;
-    background: $primary-clr;
+    // background: $primary-clr;
     text-align: center;
     position: relative;
     white-space: nowrap;
-    z-index: 1;
+    z-index: 3;
     border: 1px solid transparent;
     transition: all .5s ease-out;
 }
-.header-action-btn .header-action:hover, .primary-btn:hover{
-    background-color: $header-top-bg;
-    color: $primary-clr;
-    border-color: $primary-clr;
-}
+
 
 .header-search-action {
     line-height: 1;
@@ -40,3 +36,45 @@
     color: $primary-clr;
     font-weight: 500;
 }
+
+.primary-btn::after {
+    position: absolute;
+    content: "";
+    top: 93%;
+    left: 50%;
+    width: 0%;
+    height: 3px;
+    background: $primary-clr;
+    transform: translateX(-50%);
+    border-radius:30px;
+    transition: all .5s ease-in-out;
+}
+
+.header-action-btn:hover .primary-btn::after {
+    transform:translateX(-50%);
+    width:60%;
+}
+
+.header-action-btn{
+    position:relative;
+    z-index: 1;
+}
+
+.header-action-btn::after,.header-action-btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+    opacity: .5;
+    transition: all .6s ease-in-out;
+}
+
+.header-action-btn:hover::after,.header-action-btn:hover::before {
+    width: 0;
+}
+
+.header-action-btn::before {right: 0;left: auto;z-index: 2;}
