@@ -24,4 +24,16 @@ gsap.to(parallaxbg,{
         scrub:true,
         markers:true,
     }
+});
+
+// Header
+document.addEventListener('DOMContentLoaded',() =>{
+    const tl = gsap.timeline({defaults:{ease:"power3.out"}});
+
+    // Animation for Logo
+    tl.from(".location",{
+        y:-10,
+        opacity:0,
+        duration:0.8
+    });
 })
