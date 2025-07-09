@@ -1,14 +1,27 @@
-.header-menu-area {
-    // background: #18191D;
-    position: relative;
-    &.sticky_menu{
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: all .4s ease-out;
+    &.scrolled{
+        animation: fadeInDown .3s ease-out;
+        position: fixed;
         top: 0;
         left: 0;
+        z-index: 99999;
         width: 100%;
-        position: sticky;
     }
 }
-.header-menu-area::before{
+
+.header-menu-area {
+    // background: #18191D;
+    transition: all .4s ease-out;
+    position: relative;
+}
+
+.header-menu-area::before {
     position: absolute;
     content: "";
     top: 0;
@@ -16,10 +29,11 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color:#18191D;
+    background-color: #18191D;
     opacity: .5;
 }
-.header-menu-wrap{
+
+.header-menu-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,6 +54,7 @@
     transition: all .4s ease-in-out;
     padding: 37px 40px;
 }
+
 .biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list:hover .biz-dropdown-submenu {
     transform: translateY(0);
     opacity: 1;
@@ -100,6 +115,7 @@
 .biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list ul.biz-dropdown-submenu li a:hover {
     padding-left: 30px;
 }
+
 .biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list.dropdown::before {
     position: absolute;
     content: "\2b";
@@ -115,7 +131,11 @@
     line-height: 0;
 }
 
-.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list.active .biz-menu-link,.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list .biz-menu-link:hover, .biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list::before,.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list.active::before,.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list:hover::before {
+.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list.active .biz-menu-link,
+.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list .biz-menu-link:hover,
+.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list::before,
+.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list.active::before,
+.biz-menu .biz-mean-menu .biz-menu-unorder-list .biz-menu-list:hover::before {
     color: $primary-clr;
 }
 

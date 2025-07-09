@@ -43,47 +43,21 @@
 
         const body = document.body;
         const html = document.documentElement;
-        const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        const height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight,
+            html.scrollHeight, html.offsetHeight);
 
-        if (5 < $(window).scrollTop()) {
-            $(".ta_portfolio-side-area").addClass("fixed_sidebar")
-        }
-        if (height > 1300) {
-            const sidebarM = $('.ta_portfolio-side-area');
-            let scrolled = false;
-            $(window).scroll(function () {
-                if (100 < $(window).scrollTop() && !scrolled) {
-                    sidebarM.addClass("fixed_sidebar animated fadeIn")
-                        .animate({ "margin-top": "0px" });
-                    scrolled = true;
-                }
-                if (100 > $(window).scrollTop() && scrolled) {
-                    sidebarM.removeClass("fixed_sidebar animated fadeIn").css("margin-top", "0px");
-                    scrolled = false;
-                }
-            })
-        }
+        // if (100 < $(window).scrollTop()) {
+        //     $(".fixed-header").addClass("sticky_menu");
+        // }
 
-        if (100 < $(window).scrollTop()) {
-            $(".header-menu-area").addClass("sticky_menu");
-        }
-
-        if (height > 1400) {
-            const nav = $(".header-menu-area");
-            let scrolled = false;
-            $(window).scroll(function () {
-                if (100 < $(window).scrollTop() && !scrolled) {
+       
+            let nav = $(".fixed-header");
+                if (100 < $(window).scrollTop()) {
                     nav
                         .addClass("sticky_menu animated fadeIn")
-                        .animate({ "margin-top": "0px" });
-                    scrolled = true;
+                }else{
+                    nav.removeClass("sticky_menu animated fadeIn");
                 }
-                if (100 > $(window).scrollTop() && scrolled) {
-                    nav.removeClass("sticky_menu animated fadeIn").css("margin-top", "0px");
-                    scrolled = false;
-                }
-            });
-        }
 
 
         /*
