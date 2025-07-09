@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Service Section
-    tl.from('.biz-service-bg .biz-providing-we-do ', {
+    tl.from('.biz-service-bg', {
         duration: .5,
         opacity: 0,
         scale: 0,
@@ -126,19 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleActions: "play none none none",
             scrub:1
             // markers: true, // ডিবাগ করার জন্য এটি আনকমেন্ট করতে পারেন
-        }
-    });
-    tl.from('.biz-providing-title', {
-        x: -20,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-            trigger: ".biz-providing-title", // When this element enters the viewport
-            start: "top 80%",          // Animation starts when top of title is 80% from top of viewport
-            toggleActions: "play none none none", // Play animation once
-            markers: false,
-            scrub: 1
         }
     });
     tl.from('.biz-single-service-box', {
@@ -196,5 +183,36 @@ document.addEventListener('DOMContentLoaded', () => {
             markers: false,
             scrub: 1
         }
-    })
+    });
+
+
+    // What we do Section
+
+    tl.from('.biz-providing-title', {
+        x: -20,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+            trigger: ".biz-providing-title", // When this element enters the viewport
+            start: "top 80%",          // Animation starts when top of title is 80% from top of viewport
+            toggleActions: "play none none none", // Play animation once
+            markers: false,
+            scrub: 1
+        }
+    });
+    tl.to('.biz-single-providing-what-we-do-box', {
+        x:-20,           // Move to original Y position
+        opacity: 0,     // Fade in
+        duration: 0.5,  // Animation duration for each box
+        ease: "back.out(1.7)", // A nice slightly bouncy ease
+        stagger: 0.15,  // Stagger the animation by 0.15 seconds for each box
+        scrollTrigger: {
+            trigger: ".biz-providing-what-we-do-box-wrap",
+            start: "top 40%",
+            toggleActions: "play none none none",
+            markers: false,
+            scrub: 1
+        }
+    });
 })
