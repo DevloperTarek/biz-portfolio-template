@@ -246,4 +246,18 @@ document.addEventListener('DOMContentLoaded', () => {
             scrub: 1
         }
     });
+    tl.from('.biz-providing-faq-title-content',{
+        y:-20,
+        duration:0.4,
+        ease: "back.out(1.7)",
+        opacity:0,
+        scrollTrigger:{
+            trigger:".biz-providing-faq-area",
+            start:"top 50%",
+            end:"top top",
+            toggleActions:"play none none none",
+            markers:false,
+            scrub:1
+        }
+    })
 })
