@@ -259,5 +259,19 @@ document.addEventListener('DOMContentLoaded', () => {
             markers:false,
             scrub:1
         }
+    });
+    tl.from('#biz-providing-container',{
+        x:-20,      // Move to original Y position
+        opacity: 0,     // Fade in
+        duration: 0.5,  // Animation duration for each box
+        ease: "back.out(1.7)", // A nice slightly bouncy ease
+        stagger: 0.15,  // Stagger the animation by 0.15 seconds for each box
+        scrollTrigger: {
+            trigger: ".biz-providing-faq-area",
+            start: "top 40%",
+            toggleActions: "play none none none",
+            markers: false,
+            scrub: 1
+        }
     })
 })
