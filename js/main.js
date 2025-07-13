@@ -273,5 +273,18 @@ document.addEventListener('DOMContentLoaded', () => {
             markers: false,
             scrub: 1
         }
+    });
+    tl.from('.biz-call-to-action-area',{
+                // Move to original Y position
+        opacity: 0,     // Fade in
+        duration: 0.5,  // Animation duration for each box
+        ease: "back.out(1.7)", // A nice slightly bouncy ease
+        scrollTrigger: {
+            trigger: ".biz-providing-faq-area",
+            start: "top 40%",
+            toggleActions: "play none none none",
+            markers: false,
+            scrub: 1
+        }
     })
 })
