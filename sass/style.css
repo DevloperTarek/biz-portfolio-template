@@ -5678,7 +5678,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   justify-content: center;
   overflow-y: scroll;
   transition: all 0.6s ease-out;
-  z-index: 9999;
+  z-index: 999999;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .biz-search-bar-area {
