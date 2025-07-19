@@ -4689,6 +4689,7 @@ nav.header-top-right-menu .menu-unorder-list .menu-list:nth-child(1)::before {
   width: 80px;
   height: 80px;
   background: #1f1f1f;
+  color: #fff;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.4s ease-out;
